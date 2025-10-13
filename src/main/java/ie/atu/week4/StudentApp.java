@@ -31,13 +31,18 @@ public class StudentApp {
             student1.setCourse(course);
 
             studentList.add(student1);
+            System.out.println("\n" + name + " Added Successfully!");
 
             count++;
         }
 
+        System.out.println("\n--- STUDENT LIST ---");
         for(Student student : studentList)
         {
-            System.out.println("Name: " + student.getName() + " Email: " + student.getEmail() + " Course: " + student.getCourse());
+            System.out.println("-----------------------------");
+            System.out.println("Name: " + student.getName());
+            System.out.println("Email: " + student.getEmail());
+            System.out.println("Course: " + student.getCourse());
         }
     }
 }
